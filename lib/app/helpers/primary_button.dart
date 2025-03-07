@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+const isRunningWithWasm = bool.fromEnvironment('dart.tool.dart2wasm');
+// final isRunningWithWasm = identical(double.nan, double.nan);
 final ButtonStyle buttonPrimary = ElevatedButton.styleFrom(
   minimumSize: Size(258, 50),
   elevation: 1,
