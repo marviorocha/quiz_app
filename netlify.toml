@@ -1,6 +1,15 @@
 [build]
-  command = "flutter build web --wasm"
+  command = """
+  wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.16.0-stable.tar.xz &&
+  tar xf flutter_linux_3.16.0-stable.tar.xz &&
+  export PATH="$PATH:$(pwd)/flutter/bin" &&
+  flutter doctor &&
+  flutter config --enable-wasm &&
+  flutter build web --wasm
+  """
   publish = "build/web"
+
+ 
 
 [[redirects]]
   from = "/*"
