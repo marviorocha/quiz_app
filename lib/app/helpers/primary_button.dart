@@ -13,7 +13,7 @@ final ButtonStyle buttonPrimary = ElevatedButton.styleFrom(
 );
 
 final ButtonStyle buttonSecundary = ElevatedButton.styleFrom(
-  minimumSize: const Size(300, 50),
+  minimumSize: const Size(270, 50),
   elevation: 1,
   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
   foregroundColor: Colors.blueAccent,

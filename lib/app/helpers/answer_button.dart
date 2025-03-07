@@ -22,11 +22,7 @@ class AnswerButton extends StatelessWidget {
         style: buttonSecundary,
         child: Text(
           answerText,
-          style: GoogleFonts.poppins(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
+          style: GoogleFonts.poppins(color: Colors.white, fontSize: 15),
         ),
       ),
     );
