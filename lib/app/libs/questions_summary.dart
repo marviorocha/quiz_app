@@ -7,7 +7,8 @@ class QuestionsSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 400,
+      height: 320,
+      width: 450,
       child: SingleChildScrollView(
         child: Column(
           children:
@@ -16,14 +17,18 @@ class QuestionsSummary extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      color: Colors.white,
-                      width: 20,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.indigo,
+                      ),
+                      width: 40,
+                      height: 40,
                       child: Center(
                         child: Text(
                           ((data['question_index'] as int) + 1).toString(),
 
                           style: GoogleFonts.poppins(
-                            color: const Color(0xFF191616),
+                            color: const Color(0xFFFFFFFF),
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),

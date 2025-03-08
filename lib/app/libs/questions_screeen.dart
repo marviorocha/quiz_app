@@ -31,7 +31,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SizedBox(
-            width: 400,
+            width: 320,
             child: Text(
               questionAweser.title,
               textAlign: TextAlign.center,
